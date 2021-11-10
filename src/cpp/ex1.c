@@ -2,10 +2,12 @@
 #include <vector>
 #include <algorithm>
 #include "../headers/ex1.h"
-#define num 3
+//define没有命名空间，只能用ex1的1来做命名 
+#define num1 3
 using namespace std;
+namespace ex1{
 //物品个数 
-int n=num;
+int n=num1;
 //背包容量
 int c=30;
 //物品重量
@@ -15,19 +17,20 @@ vector<int> v={45,25,25};
 //最高价值 
 int bestP;
 //最优路径 
-vector<int> bestPath(num);
+vector<int> bestPath(num1);
 //记录阶段重量 
-vector<int> varC(num+1);
+vector<int> varC(num1+1);
 //记录阶段价值 
-vector<int> value(num+1);
+vector<int> value(num1+1);
 //记录阶段path 
-vector<int> path(num);
+vector<int> path(num1);
 //性价比 
-vector<float> costP(num);
+vector<float> costP(num1);
 
 float bound(int stage){
 	return (*max_element(costP.begin()+stage,costP.end()))*(c-varC[stage]);
 }
+
 void backTrace(int stage){
 	if(stage>=n){
 		cout<<"触发约束条件，结束，当前path为："
@@ -56,9 +59,9 @@ void backTrace(int stage){
 		}
 	}
 }
-void ex1(){
+void fex1(){
 	int temp3=0;
-	for(temp3;temp3<num;temp3++){
+	for(temp3;temp3<num1;temp3++){
 		costP[temp3]=(float)v[temp3]/w[temp3];
 	}
 	backTrace(0);
@@ -71,3 +74,6 @@ void ex1(){
 	cout<<endl;
 	return ;
 }
+}
+
+
