@@ -20,3 +20,5 @@
 #include "ex9.h" 
 //201312-1 出现次数最多的数
 #include "ex10.h"
+//类模板实验
+#include "ex11.h" 
