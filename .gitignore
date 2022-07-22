@@ -31,6 +31,8 @@
 *.out
 *.app
 
+target
+
 # devcpp
 Makefile.win
 Project1.dev
