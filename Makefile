@@ -13,6 +13,6 @@ exercise:
 	@mkdir -p $(target1)
 	@\
 	cd ./src/exercise/$(ex)/;\
-	g++ main.cpp -o ../../../$(target1)/main
+	g++ main.c* -o ../../../$(target1)/main
 	@$(target1)/main
 
