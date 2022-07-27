@@ -2,13 +2,12 @@
  * @Author: doufugan 2195134555@qq.com
  * @Date: 2022-07-22 12:18:02
  * @LastEditors: doufugan 2195134555@qq.com
- * @LastEditTime: 2022-07-22 23:38:29
+ * @LastEditTime: 2022-07-23 17:15:20
  * @FilePath: /Basic-algorithm-exercise/src/exercise/ex0011/main.cc
  * @Description: 最大流ff算法实现，第一次尝试 google c++ code style
  */
 
 #include <bits/stdc++.h>
-#include <climits>
 using namespace std;
 using gg = long long;
 class Arc {
@@ -34,9 +33,8 @@ class Graph {
     vertexs_[u].push_front(arc1);
     vertexs_[v].push_front(arc2);
   }
-  int MaxFlow() {
-    array<bool, 201> vertexs_visited;
-    vertexs_visited.fill(false);
+  gg MaxFlow() {
+    array<bool, 10000> vertexs_visited;
     function<gg(int,gg)> Dfs = [this, &vertexs_visited, &Dfs](int i,gg flow) {
       // 寻找增广路径，寻找增广路径的 bottleneck 增广该路径上的流
       // 对于一个节点来说，Dfs 的参数 flow 是前向路径上的最大能经过的流，对于汇点 t 来说
@@ -56,11 +54,14 @@ class Graph {
       }
       return (gg)0;
     };
-    for(gg f = Dfs(s_,LONG_LONG_MAX);f != 0;f = Dfs(s_,LONG_LONG_MAX)) {
-      max_flow_ += f;
-      vertexs_visited.fill(false);
+    {
+      gg f = 0;
+      do {
+        vertexs_visited.fill(false);
+        f = Dfs(s_,LONG_LONG_MAX);
+        max_flow_ += f;
+      } while (f != 0);
     }
-
     return max_flow_;
   }
   
@@ -73,12 +74,16 @@ int main() {
   int ni, mi;
   cin >> ni >> mi >> g.s_ >> g.t_;
   g.vertexs_.resize(ni + 1);
+  fill(g.vertexs_.begin(),g.vertexs_.end(),list<Arc*>());
   while (mi--) {
     int u, v, capacity;
     cin >> u >> v >> capacity;
+    if(capacity > pow(2, 32) - 1){
+      exit(0);
+    }
     g.Add(u, v, capacity);
   }
-  cout << g.MaxFlow() << '\n';
+  cout << g.MaxFlow();
   return 0;
 }
 

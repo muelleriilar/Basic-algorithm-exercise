@@ -37,3 +37,9 @@ target
 Makefile.win
 Project1.dev
 Project1.layout
+
+# cmake
+build
+.cache
+.vscode
+CMakeFiles
