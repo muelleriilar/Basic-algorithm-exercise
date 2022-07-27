@@ -9,12 +9,10 @@
 本项目使用 cmake, 编译运行步骤如下
 1. 创建 build 文件夹
 2. 进入 build 文件夹
-3. cmake ../
-4. make
-注意, 需要运行哪个程序需要在 CMakeLists.txt 中指定, 默认运行 ex0001.cc 即 helloworld
+3. `cmake ../`
+4. `make`
 
-题目 知识点
-练习 算法 知识点
+注意, 需要运行哪个程序需要在 CMakeLists.txt 中指定, 默认运行 `ex0001.cc` 即 helloworld
 
 ### CSP
 
@@ -27,6 +25,9 @@ button {
 }
 .left {
   text-align:left;
+}
+table {
+  width: unset !important;
 }
 </style>
 <div>
@@ -45,7 +46,7 @@ button {
 ### practice
 
 <div>
-  <div style="display:flex;align-items:center;justify-content:center;height: 100%" >
+  <div style="display:flex !important;align-items:center !important;justify-content:center! important;height: 100%" >
     <table class="tg" style = "text-align:center">
     <thead><tr><th>文件</th><th>名称</th><th>注释</th><th>标签</th></tr></thead>
     <tbody >
@@ -94,40 +95,15 @@ interval tree
 ```
 
 ### 题型知识点总结
-字符串  
 
-1.3     2.3     5.3     7.3     8.3     9.3     10.3
-
-最短路径    
-
-1.4     4.4     8.4     10.5
-
-最小生成树
-
-3.4     10.4
-
-网络流
-
-3.5
-
-dp
-
-1.5     2.5     4.5     5.5     7.5     9.4
-
-搜索
-
-2.4     5.4     6.3     6.4     7.4
-
-排序
-
-3.3
-
-模拟
-
-4.3
-
-线段树
-
-8.5
+字符串: 1.3|2.3|5.3|7.3|8.3|9.3|10.3
+最短路径: 1.4|4.4|8.4|10.5
+最小生成树: 3.4|10.4
+网络流: 3.5
+dp: 1.5|2.5|4.5|5.5|7.5|9.4
+搜索: 2.4|5.4|6.3|6.4|7.4
+排序: 3.3
+模拟: 4.3
+线段树: 8.5
 
 字符串、树状数组、线段树、搜索、最短路径、生成树、网络流、dp、dp、dp
