@@ -4,7 +4,7 @@
  * @LastEditors: doufugan 2195134555@qq.com
  * @LastEditTime: 2022-07-26 23:32:23
  * @FilePath: /Basic-algorithm-exercise/src/exercise/ex0014/main.cc
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Description: 线性筛编译期打表
  */
 // Hello world! Cplayground is an online sandbox that makes it easy to try out
 // code.
