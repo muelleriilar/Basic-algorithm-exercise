@@ -72,6 +72,13 @@ table {
         <button>参数列表</button> <button>explicit 关键字</button> <button>运算符重载 const</button> <button>仿函数</button> </td></tr>
       <tr><td>0011.cc</td><td>io 模板</td><td></td><td class = "left">
         <button>cin</button> <button>cout</button> <button>流同步解绑</button> </td></tr>
+      <tr><td>0012.cc</td><td>最长公共子序列</td><td>lcs 洛谷1439 MLE</td><td class = "left">
+        <button>动态规划</button> <button>线性dp</button> <button>递归</button> <button>for 读入vector</button> <button>二维 array</button> </td></tr>
+      <tr><td>0013.cc</td><td>最长上升子序列</td><td>lis</td><td class = "left">
+        <button>暴力</button> <button>iota</button> </td></tr>
+      <tr><td>0014.cc</td><td>旅行商问题</td><td>lis</td><td class = "left">
+        <button>状态压缩dp</button> </td></tr>
+
     </tbody>
     </table>
   </div>
