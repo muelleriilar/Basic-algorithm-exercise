@@ -11,7 +11,7 @@ public:
     // CxString string2 = 'c';  有隐式转换
     // explicit 相当于禁用了隐式转换
     explicit StringAppend(const string& str) : ss(str){}
-    // 函数加上const后缀的作用是表明函数本身不会修改类成员变量
+    // 函数加上const后缀的作用是表明函数本身不会修改类成员变量 必须加 不加会报错
     void operator() (const string& str) const {
          cout << str << ' ' << ss << endl;
     }

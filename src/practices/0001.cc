@@ -1,12 +1,3 @@
-/*
- * @Author: doufugan 2195134555@qq.com
- * @Date: 2022-07-26 20:52:56
- * @LastEditors: doufugan 2195134555@qq.com
- * @LastEditTime: 2022-07-26 23:32:23
- * @FilePath: /Basic-algorithm-exercise/src/exercise/ex0014/main.cc
- * @Description: 线性筛编译期打表
- */
-
 #include <bits/stdc++.h>
 using namespace std;
 using gg = long long;

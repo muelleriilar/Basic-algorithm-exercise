@@ -35,9 +35,11 @@ table {
     <table class="tg" style = "text-align:center">
     <thead><tr><th>题目</th><th>名称</th><th>文件</th><th>标签</th></tr></thead>
     <tbody >
-      <tr><td colspan = 4>2022 - 3</td></tr>
-      <tr><td>1</td><td>测试</td><td>0001.cc</td><td class = "left">
-        <button>语言基础</button> <button>网络流</button> <button>树状数组</button> <button>线段树</button> <button>tarjan </button> </td></tr>
+      <tr><td colspan = 4>2022 - 6</td></tr>
+      <tr><td>202206-1</td><td>归一化处理</td><td>202206-1.cc</td><td class = "left">
+        <button>语言基础</button></td></tr>
+      <tr><td>202206-2</td><td>藏宝图</td><td>202206-2.cc</td><td class = "left">
+        <button>for 循环</button> <button>lower_bound</button> </td></tr>
     </tbody>
     </table>
   </div>
@@ -78,11 +80,11 @@ table {
         <button>暴力</button> <button>iota</button> </td></tr>
       <tr><td>0014.cc</td><td>旅行商问题</td><td>lis</td><td class = "left">
         <button>状态压缩dp</button> </td></tr>
-
     </tbody>
     </table>
   </div>
 </div>
+
 ex0007
 
 ```
