@@ -40,6 +40,8 @@ table {
         <button>语言基础</button></td></tr>
       <tr><td>202206-2</td><td>藏宝图</td><td>202206-2.cc</td><td class = "left">
         <button>for 循环</button> <button>lower_bound</button> </td></tr>
+      <tr><td>202206-3</td><td>角色授权</td><td>202206-3.cc</td><td class = "left">
+        <button>大模拟</button> <button>goto 使用</button> <button>binary_search 重载运算符</button> <button>lower_bound 重载运算符</button> </td></tr>
     </tbody>
     </table>
   </div>
